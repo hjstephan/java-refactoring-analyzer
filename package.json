@@ -1,0 +1,77 @@
+{
+  "name": "java-refactoring-analyzer",
+  "displayName": "Java Refactoring Analyzer",
+  "description": "Analyzes Java code structure to maximize classes and minimize LOC/method with real-time decorations",
+  "version": "0.0.1",
+  "publisher": "hjstephan",
+  "author": {
+    "name": "Stephan Epp"
+  },
+  "license": "LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hjstephan/java-refactoring-analyzer"
+  },
+  "bugs": {
+    "url": "https://github.com/hjstephan/java-refactoring-analyzer/issues"
+  },
+  "homepage": "https://github.com/hjstephan/java-refactoring-analyzer#readme",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": ["Programming Languages"],
+  "keywords": [
+    "java",
+    "refactoring",
+    "code quality",
+    "metrics",
+    "linting"
+  ],
+  "readme": "README.md",
+  "activationEvents": ["onLanguage:java"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "java-refactoring-analyzer.analyze",
+        "title": "Analyze Java Refactoring Metrics"
+      },
+      {
+        "command": "java-refactoring-analyzer.toggleDecorations",
+        "title": "Toggle Real-time Decorations"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "java-refactoring-analyzer.analyze",
+        "key": "ctrl+alt+r",
+        "mac": "cmd+alt+r",
+        "when": "editorLangId == java"
+      }
+    ],
+    "configuration": {
+      "title": "Java Refactoring Analyzer",
+      "properties": {
+        "javaRefactoringAnalyzer.enableRealTimeDecorations": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable real-time LOC and method count decorations"
+        },
+        "javaRefactoringAnalyzer.methodLocThreshold": {
+          "type": "number",
+          "default": 10,
+          "description": "LOC threshold for method warnings (yellow when exceeded)"
+        },
+        "javaRefactoringAnalyzer.classMethodThreshold": {
+          "type": "number",
+          "default": 10,
+          "description": "Method count threshold for class warnings"
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "java-parser": "^2.0.0"
+  }
+}
+
