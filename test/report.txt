@@ -1,64 +1,41 @@
 
-> java-refactoring-analyzer@1.0.0 test:coverage
+> java-refactoring-analyzer@1.0.1 test:coverage
 > nyc mocha
 
 
 
   Java Refactoring Analyzer Extension Tests
     Extension Activation
-Java Refactoring Analyzer is now active
       ✔ should activate and register commands
-Java Refactoring Analyzer is now active
       ✔ should create decoration types on activation
-Java Refactoring Analyzer is now active
       ✔ should register editor change listeners
     Analyze Command
-Java Refactoring Analyzer is now active
       ✔ should show error when no active editor
-Java Refactoring Analyzer is now active
       ✔ should show error when document is not Java
-Java Refactoring Analyzer is now active
-      ✔ should analyze Java code and show metrics panel
-Java Refactoring Analyzer is now active
-      ✔ should handle parsing errors gracefully (145ms)
+      ✔ should analyze Java code and show metrics panel (40ms)
+      ✔ should handle parsing errors gracefully (121ms)
     Toggle Decorations Command
-Java Refactoring Analyzer is now active
       ✔ should toggle decorations on
     Decoration Updates
-Java Refactoring Analyzer is now active
-      ✔ should update decorations when Java file is opened (703ms)
-Java Refactoring Analyzer is now active
-      ✔ should update decorations on document change (704ms)
-Java Refactoring Analyzer is now active
+      ✔ should update decorations when Java file is opened (704ms)
+      ✔ should update decorations on document change (702ms)
       ✔ should not update decorations for non-Java files (703ms)
     Code Analysis
-Java Refactoring Analyzer is now active
       ✔ should count classes correctly
-Java Refactoring Analyzer is now active
       ✔ should count methods correctly
-Java Refactoring Analyzer is now active
-      ✔ should identify long methods (703ms)
+      ✔ should identify long methods (702ms)
     Metrics Calculation
-Java Refactoring Analyzer is now active
       ✔ should calculate average LOC per method
-Java Refactoring Analyzer is now active
       ✔ should generate recommendations for long methods
     Configuration
-Java Refactoring Analyzer is now active
       ✔ should respect methodLocThreshold setting (703ms)
-Java Refactoring Analyzer is now active
-      ✔ should respect classMethodThreshold setting (703ms)
+      ✔ should respect classMethodThreshold setting (702ms)
     Edge Cases
-Java Refactoring Analyzer is now active
       ✔ should handle empty Java file
-Java Refactoring Analyzer is now active
       ✔ should handle interface declarations
-Java Refactoring Analyzer is now active
       ✔ should handle enum declarations
-Java Refactoring Analyzer is now active
       ✔ should handle constructor declarations
     Deactivation
-Java Refactoring Analyzer is now active
       ✔ should clear decorations on deactivate
 
 
@@ -67,9 +44,9 @@ Java Refactoring Analyzer is now active
 ---------------------------------------|---------|----------|---------|---------|-------------------
 File                                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------------------------|---------|----------|---------|---------|-------------------
-All files                              |   13.05 |    11.97 |   26.92 |    38.9 |                   
- java-refactoring-analyzer             |    78.4 |    65.54 |    87.5 |   79.25 |                   
-  extension.js                         |    78.4 |    65.54 |    87.5 |   79.25 | ...23,531,551,608 
+All files                              |   13.65 |    12.51 |   28.75 |   39.95 |                   
+ java-refactoring-analyzer             |     100 |     90.9 |     100 |     100 |                   
+  extension.js                         |     100 |     90.9 |     100 |     100 | 59-66             
  java-refactoring-analyzer/coverage    |       0 |        0 |       0 |       0 |                   
   block-navigation.js                  |       0 |        0 |       0 |       0 | 2-87              
   prettify.js                          |       0 |        0 |       0 |       0 | 2                 
@@ -78,4 +55,7 @@ All files                              |   13.05 |    11.97 |   26.92 |    38.9 
   block-navigation.js                  |       0 |        0 |       0 |       0 | 2-87              
   prettify.js                          |       0 |        0 |       0 |       0 | 2                 
   sorter.js                            |       0 |        0 |       0 |       0 | 2-210             
+ java-refactoring-analyzer/lib         |   75.53 |    62.59 |   86.95 |   76.21 |                   
+  decorations.js                       |   97.56 |    78.57 |     100 |     100 | 66,90,106         
+  parser.js                            |   70.83 |    60.68 |   84.61 |      71 | ...54,271,609-661 
 ---------------------------------------|---------|----------|---------|---------|-------------------
