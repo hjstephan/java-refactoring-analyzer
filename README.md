@@ -140,14 +140,16 @@ public class OrderNotifier { ... }
 
 ## Release Notes
 
-### 0.0.1
-
-Initial release:
+### Initial Release v0.0.1
 - Real-time inline LOC display for methods
 - Real-time method count display for classes
 - Comprehensive analysis dashboard
 - Configurable thresholds
 - Color-coded warnings
+
+### Quality v1.0.2
+- Tests and coverage report
+- Refactoring into modules
 
 ## Contributing
 
@@ -168,7 +170,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## Support
 
 If you encounter any issues or have suggestions:
-- Open an issue on [GitHub](https://github.com/hjstephan/java-refactoring-analyzer/issues)
+- Open an issue on [GitHub](https://github.com/hjstephan/refactorings/issues)
 - Contact: hjstephan86@gmail.com
 
 ---

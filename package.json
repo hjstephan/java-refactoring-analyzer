@@ -2,8 +2,8 @@
   "name": "java-refactoring-analyzer",
   "displayName": "Java Refactoring Analyzer",
   "description": "Analyzes Java code structure to maximize classes and minimize LOC/method with real-time decorations",
-  "version": "1.0.0",
-  "publisher": "hjstephan",
+  "version": "1.0.2",
+  "publisher": "hjstephan86",
   "author": {
     "name": "Stephan Epp"
   },
