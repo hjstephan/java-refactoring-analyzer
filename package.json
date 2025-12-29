@@ -2,7 +2,7 @@
   "name": "java-refactoring-analyzer",
   "displayName": "Java Refactoring Analyzer",
   "description": "Analyzes Java code structure to maximize classes and minimize LOC/method with real-time decorations",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "hjstephan86",
   "author": {
     "name": "Stephan Epp"
@@ -10,12 +10,12 @@
   "license": "LICENSE",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hjstephan/java-refactoring-analyzer"
+    "url": "https://github.com/hjstephan/refactorings"
   },
   "bugs": {
-    "url": "https://github.com/hjstephan/java-refactoring-analyzer/issues"
+    "url": "https://github.com/hjstephan/refactorings/issues"
   },
-  "homepage": "https://github.com/hjstephan/java-refactoring-analyzer#readme",
+  "homepage": "https://github.com/hjstephan/refactorings#readme",
   "engines": {
     "vscode": "^1.85.0"
   },

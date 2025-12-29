@@ -147,7 +147,7 @@ public class OrderNotifier { ... }
 - Configurable thresholds
 - Color-coded warnings
 
-### Quality v1.0.2
+### Quality v1.0.3
 - Tests and coverage report
 - Refactoring into modules
 
